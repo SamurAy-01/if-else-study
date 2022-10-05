@@ -1,0 +1,61 @@
+// Bir sayının 10 ile 50 arasında olup olmadığını kontrol et.
+
+let sayi = 12;
+if (sayi > 10 && sayi < 50) {
+    console.log(true)
+} else {
+    console.log(false)
+}
+
+// Bir sayının pozitif tek sayı olup olmadığını kontrol et.
+
+let sayi2 = 12;
+if (sayi2  % 2 == 1 || sayi2 > 0) {
+    console.log("sayi pozitif tek sayıdır.");
+}
+
+// x, y, z, sayılarının büyüklük karşılaştırmasını yapınız.
+
+let x = 8, y = 10, z = 16;
+
+if (x > y && x > z) {
+    console.log("x en büyük")
+} else if (y > x && y > z){
+    console.log("y en büyük")
+} else if (z > x && z > y){
+    console.log("z en büyük")
+}
+
+// 2 vize (40%) ve 1 final (60%) notuna göre hesaplanan ortalama için;
+
+let vize1 = 80;
+let vize2 = 70;
+let vize3 = 90;
+let vize4 = 90;
+let final = 30;
+
+let ortalama = (vize1 + vize2 + vize3 + vize4) / 4 * 0.4 + final * 0.6;
+
+    //a- eğer ortalama 50 ve üstündeyse geçti değilse kaldı yazsın.
+
+if (ortalama >= 50){
+    console.log("geçtiniz")
+} else {
+    console.log("geçemediniz")
+}
+
+    //b- geçmek için ortalama 50 bile olsa final notu en az 50 olmalıdır.
+
+if (ortalama >= 50 && final >= 50){
+    console.log("geçtiniz")
+} else {
+    console.log("geçemediniz")
+}
+
+    //c- finalden 70 alındığında ortalama 50 nin altında olsa bile dersten geçilsin.
+
+if (ortalama >= 50 || final >= 70){
+    console.log("geçtiniz")
+} else {
+    console.log("geçemediniz")
+}
